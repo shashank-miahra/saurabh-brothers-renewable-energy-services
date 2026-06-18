@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #e07a5f;
+    --color-primary-light: #f28e75;
+    --color-secondary: #1a1a1a;
+    --color-secondary-dark: #000000;
+    --color-background: #faf9f6;
+    --color-alabaster: #faf9f6;
+
+    --font-display: "Poppins", "Segoe UI", system-ui, sans-serif;
+    --font-body: "Roboto", "Segoe UI", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  .bg-background {
+    background-color: var(--color-background);
+  }
+  .bg-alabaster {
+    background-color: var(--color-alabaster);
+  }
+  .elementor-divider {
+    @apply border-t-2 border-primary w-16 mx-auto my-4;
+  }
+  .elementor-heading {
+    @apply font-bold text-secondary text-3xl md:text-4xl;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px; /* Offset for sticky Navbar */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: #333333;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
