@@ -138,7 +138,7 @@ export default function CommercialPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-[40px] md:text-[60px] font-bold leading-tight mb-6"
+              className="text-[32px] md:text-[60px] font-bold leading-tight mb-6"
             >
               Power Your Business <br className="hidden md:block"/> With Solar Energy
             </motion.h1>
@@ -262,11 +262,11 @@ export default function CommercialPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center mb-20">
             <p className="text-blue-400 font-bold tracking-wide uppercase text-sm mb-3">Process</p>
-            <h2 className="text-[32px] md:text-[40px] font-bold">Our Installation Workflow</h2>
+            <h2 className="text-[28px] md:text-[40px] font-bold">Our Installation Workflow</h2>
           </div>
           <div className="relative">
             {/* Vertical Line */}
-            <div className="absolute left-[23px] top-4 bottom-4 w-1 bg-gradient-to-b from-blue-500 to-slate-800 md:left-1/2 md:-ml-[2px]"></div>
+            <div className="absolute left-[19px] md:left-1/2 top-4 bottom-4 w-1 bg-gradient-to-b from-blue-500 to-slate-800 md:-ml-[2px]"></div>
             
             <div className="flex flex-col gap-12">
               {[
@@ -278,12 +278,12 @@ export default function CommercialPage() {
               ].map((step, i) => (
                 <div key={i} className={`relative flex items-center gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   {/* Circle Marker */}
-                  <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 border-4 border-slate-900 flex items-center justify-center font-bold text-white z-10 shadow-lg">
+                  <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-600 border-4 border-slate-900 flex items-center justify-center font-bold text-white text-sm md:text-base z-10 shadow-lg">
                     {step.num}
                   </div>
                   
                   {/* Content Box */}
-                  <div className={`ml-16 md:ml-0 md:w-1/2 ${i % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
+                  <div className={`ml-14 md:ml-0 md:w-1/2 ${i % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
                     <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 p-6 rounded-2xl hover:bg-slate-800 transition-colors">
                       <h3 className="font-bold text-[20px] mb-3 text-white">{step.title}</h3>
                       <p className="text-slate-400 text-[15px] leading-relaxed">{step.desc}</p>

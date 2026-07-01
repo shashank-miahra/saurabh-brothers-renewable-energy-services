@@ -286,7 +286,7 @@ export default async function BlogPostPage({ params }) {
 
           {/* Header Area */}
           <div className="max-w-4xl mb-10">
-            <h1 className="text-[32px] md:text-[44px] font-bold text-[#141B34] leading-[1.2] mb-5">
+            <h1 className="text-[28px] md:text-[44px] font-bold text-[#141B34] leading-[1.2] mb-5">
               {post.title}
             </h1>
             
@@ -315,6 +315,19 @@ export default async function BlogPostPage({ params }) {
               </div>
             </div>
           </div>
+
+          {/* Hero Image */}
+          {post.image && (
+            <div className="w-full aspect-video rounded-3xl overflow-hidden mb-10 relative shadow-lg">
+              <Image 
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
 
           {/* 2-Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative">

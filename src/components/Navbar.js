@@ -24,14 +24,7 @@ export default function Navbar() {
   }, []);
 
   const upDistricts = [
-    "Agra", "Aligarh", "Prayagraj", "Ambedkar Nagar", "Amethi", "Amroha", "Auraiya", "Ayodhya", "Azamgarh", "Baghpat", 
-    "Bahraich", "Ballia", "Balrampur", "Banda", "Barabanki", "Bareilly", "Basti", "Bhadohi", "Bijnor", "Budaun", 
-    "Bulandshahr", "Chandauli", "Chitrakoot", "Deoria", "Etah", "Etawah", "Farrukhabad", "Fatehpur", "Firozabad", "Gautam Buddha Nagar", 
-    "Ghaziabad", "Ghazipur", "Gonda", "Gorakhpur", "Hamirpur", "Hapur", "Hardoi", "Hathras", "Jalaun", "Jaunpur", 
-    "Jhansi", "Kannauj", "Kanpur Dehat", "Kanpur Nagar", "Kasganj", "Kaushambi", "Kheri", "Kushinagar", "Lalitpur", "Lucknow", 
-    "Maharajganj", "Mahoba", "Mainpuri", "Mathura", "Mau", "Meerut", "Mirzapur", "Moradabad", "Muzaffarnagar", "Pilibhit", 
-    "Pratapgarh", "Raebareli", "Rampur", "Saharanpur", "Sambhal", "Sant Kabir Nagar", "Shahjahanpur", "Shamli", "Shravasti", "Siddharthnagar", 
-    "Sitapur", "Sonbhadra", "Sultanpur", "Unnao", "Varanasi"
+    "Lucknow", "Kanpur", "Agra", "Prayagraj", "Aligarh"
   ];
 
   const navLinks = [
@@ -110,7 +103,7 @@ export default function Navbar() {
                 {/* Mega Menu for Cities */}
                 {link.isMegaMenu && link.dropdownItems && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[700px] bg-white border border-gray-100 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-6">
-                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">All 75 Districts of Uttar Pradesh</p>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Major Districts of Uttar Pradesh</p>
                     <div className="grid grid-cols-5 gap-x-4 gap-y-2">
                       {link.dropdownItems.map((item) => (
                         <Link
