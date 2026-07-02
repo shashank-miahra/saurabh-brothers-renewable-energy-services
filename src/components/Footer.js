@@ -4,11 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
-const popularCities = [
-  "Lucknow", "Kanpur Nagar", "Agra", "Varanasi", "Prayagraj",
-  "Meerut", "Ghaziabad", "Bareilly", "Gorakhpur", "Noida",
-  "Jhansi", "Mathura"
-];
+import { upDistricts } from "@/lib/city-data";
 
 export default function Footer() {
   return (
@@ -145,22 +141,16 @@ export default function Footer() {
               Service Areas in UP
             </h3>
             <div className="grid grid-cols-2 gap-2">
-              {popularCities.map((city) => (
+              {upDistricts.map((city) => (
                 <Link
-                  key={city}
-                  href={`/city/${city === "Noida" ? "gautam-buddha-nagar" : city.toLowerCase().replace(/ /g, "-")}`}
+                  key={city.slug}
+                  href={`/city/${city.slug}`}
                   className="text-gray-400 hover:text-white text-[14px] transition-colors py-1"
                 >
-                  Solar in {city}
+                  Solar in {city.name}
                 </Link>
               ))}
             </div>
-            <Link
-              href="/#cities"
-              className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-[13px] font-medium mt-4 transition-colors"
-            >
-              View all 75 districts <ArrowUpRight className="w-3.5 h-3.5" />
-            </Link>
           </div>
         </div>
       </div>

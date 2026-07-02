@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* Image Slider with Seamless Gradient and Blur */}
-      <div className="relative w-full aspect-[4/3] md:aspect-[21/9] overflow-hidden -mt-16 md:-mt-24 z-10">
+      <div className="relative w-full aspect-video md:aspect-[21/9] overflow-hidden -mt-16 md:-mt-24 z-10">
         {/* Top gradient for seamless blending and stronger blur haze */}
         <div className="absolute top-0 left-0 w-full h-48 md:h-80 bg-gradient-to-b from-white via-white/70 to-transparent z-20 pointer-events-none backdrop-blur-md [mask-image:linear-gradient(to_bottom,white_10%,transparent_90%)]"></div>
 

@@ -14,21 +14,21 @@ export async function generateMetadata({ params }) {
   const city = getCityData(slug);
   if (!city) return { title: "Solar Installation | Saurabh Brothers" };
   return {
-    title: `Best Solar Panel Installation Near Me in ${city.name} | Saurabh Brothers`,
-    description: `#1 rated solar panel installation company near you in ${city.name}, Uttar Pradesh. Home solar panels starting at ₹60,000 per kW. Get ₹1,08,000 government subsidy under PM Surya Ghar Yojana. Residential & commercial solar, free site survey, and 5-year maintenance. Serving all areas of ${city.name}.`,
-    keywords: `best solar panel in ${city.name}, home solar panel starting at 60000 in ${city.name}, top solar company in ${city.name}, get 108000 subsidy in ${city.name}, solar panel installation near me ${city.name}, best solar company near me ${city.name}, solar panel dealer ${city.name}, rooftop solar ${city.name}, solar subsidy ${city.name}, solar installer near me, solar panel price ${city.name}`,
+    title: `Best Solar Panel Installation in ${city.name}, UP | Saurabh Brothers`,
+    description: `Top-rated solar panel installation company in ${city.name}, Uttar Pradesh. Home solar panels starting at ₹60,000/kW. Claim ₹1,08,000 UP government subsidy under PM Surya Ghar Yojana. Free site survey in ${city.name}.`,
+    keywords: `solar panel in ${city.name}, solar panel installation ${city.name} UP, best solar company in uttar pradesh, PM surya ghar yojana UP, solar subsidy uttar pradesh, 3kw solar system price in UP, solar panel dealer ${city.name}, rooftop solar ${city.name}`,
     alternates: { canonical: `https://saurabhbrothers.in/city/${slug}` },
     openGraph: {
-      title: `Best Solar Panel Installation in ${city.name} | Saurabh Brothers`,
-      description: `Professional solar installation in ${city.name}. Starting at ₹60,000/kW with ₹1,08,000 government subsidy. Free site survey & PM Surya Ghar support.`,
+      title: `Best Solar Panel Installation in ${city.name}, UP | Saurabh Brothers`,
+      description: `Professional solar installation in ${city.name}, Uttar Pradesh. Starting at ₹60,000/kW with ₹1,08,000 UP government subsidy.`,
       url: `https://saurabhbrothers.in/city/${slug}`,
       type: "website",
       locale: "en_IN",
     },
     twitter: {
       card: "summary_large_image",
-      title: `Best Solar Panel Installation in ${city.name} | Saurabh Brothers`,
-      description: `Home solar starting at ₹60,000/kW in ${city.name}. Get ₹1,08,000 subsidy under PM Surya Ghar Yojana.`,
+      title: `Best Solar Panel Installation in ${city.name}, UP | Saurabh Brothers`,
+      description: `Home solar starting at ₹60,000/kW in ${city.name}, UP. Get ₹1,08,000 subsidy under PM Surya Ghar Yojana.`,
     },
   };
 }
